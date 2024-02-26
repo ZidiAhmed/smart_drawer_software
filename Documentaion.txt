@@ -1,0 +1,65 @@
+
+
+### Project: Smart Drawer Software
+
+#### Overview:
+
+The Smart Drawer Software is designed to capture images through a video camera, apply a pencil sketch effect, and save the stylized images at regular intervals. The project uses OpenCV for video processing, face detection, and sketch effect, and includes additional features like text annotations.
+
+#### Project Structure:
+
+```
+smart_drawer_software
+├── assets
+│   # (Optional) Additional assets used by the project
+├── docs
+│   └── README.md
+│       # Detailed documentation about the project
+├── images
+│   # Folder to store captured and stylized images
+├── known_faces
+│   └── Screenshot 2024-02-26 at 3.17.07 PM.png
+│       # (Optional) Folder for known faces if implementing face recognition
+├── main.py
+│   # Main script for running the Smart Drawer Software
+├── shape_predictor_68_face_landmarks.dat
+│   # Pre-trained model for face landmark detection
+├── src
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   └── face_recognition.cpython-311.pyc
+│   ├── drawer_controller.py
+│   └── face_recognition.py
+│       # Source code for the Smart Drawer Software modules
+└── tests
+    ├── __init__.py
+    └── test_drawer_controller.py
+        # Unit tests for the drawer_controller module
+```
+
+#### Usage:
+
+1. **Setup:**
+   - Ensure you have Python installed (version 3.11 recommended).
+   - Install required packages using `pip install -r requirements.txt` (if any).
+
+2. **Run the Application:**
+   - Execute `main.py` to start the Smart Drawer Software.
+   - Press 'q' to exit the application.
+
+3. **Configuration:**
+   - Adjust parameters in `main.py` if needed (e.g., camera index, sketch effect parameters).
+
+4. **Output:**
+   - Stylized images will be saved in the `images` folder.
+
+#### Additional Notes:
+
+- Face recognition functionality can be added by populating the `known_faces` folder and modifying the code accordingly.
+- Ensure the required pre-trained models, such as `shape_predictor_68_face_landmarks.dat`, are available.
+
+#### Created By:
+
+Created by Ahmed Alzeidi, Software Engineering.
+
